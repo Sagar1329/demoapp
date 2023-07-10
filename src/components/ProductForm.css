@@ -1,0 +1,35 @@
+.NewProduct_form {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+
+}
+
+.NewProduct_title {
+    height: 50px;
+    width: 30px;
+}
+
+.NewProduct_date {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 30px;
+}
+
+.NewProduct_button {
+    height: 30px;
+    width: 30px;
+
+
+
+}
+
+
+#FormButton {
+    border-radius: 5px;
+    width: max-content;
+    height: 20px;
+    font-weight: 600;
+    background-color: seagreen;
+}

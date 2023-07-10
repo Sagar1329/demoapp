@@ -1,6 +1,6 @@
 import ItemDate from './components/ItemDate';
 import './App.css';
-
+import NewProduct from './components/NewProduct';
 import Products from './components/Products';
 function App() {
   const products = [
@@ -12,19 +12,19 @@ function App() {
     },
     {
       id: 'p2',
-      title: 'Niqrma',
+      title: 'Surf Excel',
       amount: 130,
       date: new Date(2022, 8, 10)
     },
     {
       id: 'p3',
-      title: 'Nirwefsema',
+      title: 'Tide',
       amount: 1040,
       date: new Date(2024, 8, 10)
     },
     {
       id: 'p4',
-      title: 'Nirmaggg',
+      title: 'Tide Excel',
       amount: 1002,
       date: new Date(2023, 8, 10)
     },
@@ -33,7 +33,8 @@ function App() {
   ]
   return (
     <div>
-      < Products item={products} />
+      <NewProduct />
+      < Products item={ products } />
     </div>
 
 

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
+    width: 40%;
     padding-top: 10px;
     margin: auto;
     /* margin-left: 30vw; */
@@ -13,8 +13,8 @@
 }
 
 .cardproduct-item {
-    /* width: 85%;
-    height: 120px; */
+    width: 95%;
+    height: 100px;
     display: flex;
     margin: 10px;
     background-color: aqua;
@@ -22,7 +22,4 @@
 
 }
 
-.cardproduct-item_description {
-    text-align: right;
-
-}
+.cardproduct-item_description {}
