@@ -30,10 +30,17 @@ function App() {
     },
 
 
-  ]
+  ];
+
+
+
+  function printProductDate(data) {
+    console.log("This is in APP.js")
+    console.log(data)
+  }
   return (
     <div>
-      <NewProduct />
+      <NewProduct printProduct={ printProductDate } />
       < Products item={ products } />
     </div>
 

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./ProductForm.css";
 
 
-function ProductForm() {
+function ProductForm(props) {
 
     // const [fullProductInput, setfullProductInput] = useState({
     //     newtitle: '',
@@ -38,7 +38,7 @@ function ProductForm() {
         console.log(productData)
 
 
-
+        props.onSaveProduct(productData);
         setTile('')
         setDate('')
     }
