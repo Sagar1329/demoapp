@@ -4,28 +4,55 @@ import "./ProductForm.css";
 
 
 function ProductForm() {
-    const [title, setTile] = useState('')
-    const [date, setDate] = useState('')
 
-    function titleChangeHandler(event) {
+    // const [fullProductInput, setfullProductInput] = useState({
+    //     newtitle: '',
+    //     newdate: ''
+    // });
+
+    const [newtitle, setTile] = useState('')
+    const [newdate, setDate] = useState('')
+
+    function titleChangeHandler(event, prevState) {
         setTile(event.target.value)
-        console.log(title)
+
     }
+
+
+    // function titleChangeHandler(event) {
+    //     setTile(event.target.value)
+    //     console.log(title)
+    // }
     function DateChangeHandler(event) {
         setDate(event.target.value)
-        console.log(date)
+        //  console.log("Fi")
     }
-    return (<form className="NewProduct_form">
+    function SubmitHandler(event) {
+        event.preventDefault();
+
+        const productData = {
+            title: newtitle,
+            date: newdate
+        }
+        console.log("Form submitted")
+        console.log(productData)
+
+
+
+        setTile('')
+        setDate('')
+    }
+    return (<form className="NewProduct_form" onSubmit={ SubmitHandler }>
 
         <div className="NewProduct_title">
             <label >Title</label>
-            <input type="text" onChange={ titleChangeHandler } />
+            <input type="text" value={ newtitle } onChange={ titleChangeHandler } />
         </div>
 
         <div className="NewProduct_date">
 
             <label htmlFor="">Date</label>
-            <input type="date" min='2023-01-01' max='2023-12-12' onChange={ DateChangeHandler } />
+            <input type="date" min='2023-01-01' max='2023-12-12' onChange={ DateChangeHandler } value={ newdate } />
         </div>
 
         <div className="NewProduct_button">
