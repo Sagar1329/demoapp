@@ -1,0 +1,14 @@
+.product-date {
+
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    margin: 10px;
+    margin-right: 65%;
+    width: 100px;
+    text-align: center;
+}
+
+.product-date_month {
+    font-weight: 700;
+}

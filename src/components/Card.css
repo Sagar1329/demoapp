@@ -1,4 +1,28 @@
-.Card {
+.cardproducts {
     display: flex;
-    color: white
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-top: 10px;
+    margin: auto;
+    /* margin-left: 30vw; */
+    /* margin-top: 10vh; */
+    color: black;
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+.cardproduct-item {
+    /* width: 85%;
+    height: 120px; */
+    display: flex;
+    margin: 10px;
+    background-color: aqua;
+    border-radius: 20px;
+
+}
+
+.cardproduct-item_description {
+    text-align: right;
+
 }
